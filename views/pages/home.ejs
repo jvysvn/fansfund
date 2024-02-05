@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../layouts/head', { title: 'FansFund | jvysvn' }) %>
+</head>
+
+<body class="background on-surface-text">
+
+    <!-- TOP BAR -->
+
+    <header class="top-bar">
+        <div class="container">
+
+            <a href="/" class="logo">
+                <img src="/images/logo.svg" alt="FansFund">
+            </a>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <article>
+
+            <!-- Hero -->
+
+            <section class="hero">
+                <div class="container">
+
+                    <figure class="hero-banner">
+                        <img src="/images/banner.png" width="944" height="280" alt="banner" class="img-cover">
+                    </figure>
+
+                    <div class="hero-card">
+
+                        <figure class="card-banner">
+                            <img src="/images/jd.jpg" width="120" height="120" alt="" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <h2 class="title-large">Jayson Bull</h2>
+
+                            <p class="subtitle body-medium on-surface-variant-text">
+                                Software Engineer
+                            </p>
+
+                            <p class="card-text body-medium on-surface-variant-text">
+                                28. Philadelphia, PA.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="container lg-col-2">
+
+                <!-- Contribute -->
+
+                <section class="card elevated contribute">
+
+                    <h2 class="title-medium">
+                        Buy me a coffee!
+                    </h2>
+
+                    <form class="contribute-form" data-contribute-form>
+
+                        <div class="counter-wrapper">
+
+                            <div class="body-medium on-surface-variant-text counter-label">
+                                <span class="material-symbols-rounded primary-text icon-small">favorite</span>
+
+                                $1 Each
+                            </div>
+
+                            <div class="counter">
+
+                                <button type="button" class="icon-btn filled" data-decrement-btn>
+                                    <span class="material-symbols-rounded">remove</span>
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                                <div class="text-field-wrapper counter-field">
+
+                                    <input type="number" name="amount" value="1" min="1" max="999" required
+                                        class="text-field outlined body-large" data-counter-field data-form-field>
+                                </div>
+
+                                <button type="button" class="icon-btn filled" data-increment-btn>
+                                    <span class="material-symbols-rounded">add</span>
+
+                                    <div class="state-layer"></div>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="text-field-wrapper">
+                            <label for="name" class="text-field-label body-large">Name</label>
+
+                            <input type="text" name="name" id="name" placeholder="Enter your name!"
+                                class="text-field outlined body-large" data-form-field>
+                        </div>
+
+                        <div class="text-field-wrapper">
+                            <label for="email" class="text-field-label body-large">Email</label>
+
+                            <input type="email" name="email" id="email" placeholder="Enter your email!" required
+                                class="text-field outlined body-large" data-form-field>
+                        </div>
+
+                        <div class="text-field-wrapper">
+                            <label for="message" class="text-field-label body-large">Message</label>
+
+                            <textarea name="message" id="message" placeholder="Say Something! (Optional)"
+                                class="text-field outlined body-large" data-form-field></textarea>
+                        </div>
+
+
+                        <button type="submit" class="button filled label-large" data-submit-btn>
+                            Contribute $ <span data-total>1</span>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+
+                    </form>
+
+                </section>
+
+                <div>
+
+                    <!-- About -->
+
+                    <section class="card outlined about">
+
+                        <h2 class="title-medium">About</h2>
+
+                        <p class="card-text on-surface-variant-text body-medium">Hello! If you have enjoy my work or
+                            just wanna show some love, you can buy me a coffee! Thank you so much!</p>
+
+                        <p class="on-surface-variant-text body-medium wrapper">
+                            <span class="material-symbols-rounded">
+                                alternate_email
+                            </span>
+
+                            <a href="mailto:jaysonptbull@gmail.com">jaysonptbull@gmail.com</a>
+                        </p>
+
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="https://instagram.com/deadbandwidth" target="_blank" class="social-link">
+                                    <img src="/images/instagram.svg" width="24" height="24" alt="instagram">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://twitter.com/" target="_blank" class="social-link">
+                                    <img src="/images/x.svg" width="24" height="24" alt="twitter">
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </section>
+
+                    <!-- History -->
+
+                    <section class="card outlined history">
+
+                        <h2 class="title-medium">Recent Supporters</h2>
+
+                        <ul class="history-list">
+
+                            <li class="history-card">
+
+                                <div class="card-header">
+                                    <div class="card-avatar label-large">JD</div>
+
+                                    <h3 class="title-small card-title">
+                                        John Doe Contributed with <span class="primary-text">$100</span>
+                                    </h3>
+                                </div>
+
+
+
+                                <p class="card-body body-large on-surface-variant-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                    exercitationem!
+                                </p>
+
+                            </li>
+
+                        </ul>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <p class="body-medium on-surface-variant-text">
+            &copy; 2024 Jayson Bull
+        </p>
+    </footer>
+
+</body>
+
+</html>
